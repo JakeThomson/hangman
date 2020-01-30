@@ -16,5 +16,6 @@ def scanForLetter(letter, wordToGuess, current):
 def guess(letter, wordToGuess, current):
     if len(letter) != 1:
         print("Enter ONE letter at a time.")
+        return True
     else:
         return scanForLetter(letter, wordToGuess, current)
