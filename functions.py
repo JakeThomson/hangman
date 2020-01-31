@@ -7,7 +7,6 @@ def scanForLetter(letter, wordToGuess, current):
             current[n] = x
             found = True
     if found:
-        print(" ".join(current))
         return True
     else:
         return False

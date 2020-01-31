@@ -14,6 +14,8 @@ while gameState is None:
     if not guess(input("\nGuess a letter: ").upper(), wordToGuess, current):
         lives -= 1
         print(f"Incorrect. Lives left: {lives}")
+    else:
+        print(" ".join(current))
 
     if lives < 1:
         gameState = False
